@@ -6,7 +6,7 @@ async function main() {
     .project(projectId)
     .assets()
     .create({
-      name: 'Blank QR Code',
+      name: 'Custom QR Code',
       qrCodes: [
         {
           intent: 'https://quick-review.vercel.app/scan',

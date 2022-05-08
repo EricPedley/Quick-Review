@@ -5,7 +5,7 @@
         // console.log(user)
         const {scan, user} = await fetch(`/api/scan?scanId=${scanId}`).then(r=>r.json())
         const assetId = scan.asset.assetId
-        const userId = user?.email?.slice(0,user.email.indexOf('@')).replaceAll('.','dot')
+        const userId = user.email?.slice?.(0,user.email.indexOf('@')).replaceAll?.('.','dot')
         const {isOwner} = await fetch(`/api/checkOwnership`,{
             method: 'POST',
             body: JSON.stringify({
