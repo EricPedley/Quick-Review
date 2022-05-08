@@ -19,10 +19,11 @@
     align-items: center
 
   .big
-    font-family: 'Dancing Script', cursive
-    color: salmon
-    font-size: 3.5rem
+    font-family: 'Poppins', monospace, bold
+    color: black
+    font-size: 4rem
   #title
+    letter-spacing 2px
     @media screen and (max-width: 500px)
       display none
 
@@ -30,6 +31,7 @@
     font-size: 2rem
 
   img
+    height 5rem
     @media screen and (min-width: 500px)
       margin-right: 1.5rem
 </style>

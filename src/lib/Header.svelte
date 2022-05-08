@@ -52,7 +52,7 @@
 <style lang="stylus">
   header
     position: relative
-    padding: 1rem 2rem
+    padding: 0.5rem 2rem
 
     display: flex
     align-items: center
