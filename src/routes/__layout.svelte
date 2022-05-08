@@ -19,13 +19,13 @@
   main
     transition: $sidenav-transition
     flex 1
-    padding 40px
+    padding 30px
     background theme_color
     max-width: 500px;
     @media screen and (min-width: 500px)
       width: 80%;
       border-radius: 20px
-      margin: 5% auto
+      margin: 2% auto
   .shiftRight
     margin-left: $sidenav-width
 </style>

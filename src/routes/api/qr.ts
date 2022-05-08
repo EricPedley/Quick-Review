@@ -6,10 +6,10 @@ async function main() {
     .project(projectId)
     .assets()
     .create({
-      name: 'Custom QR Code',
+      name: 'Blank QR Code',
       qrCodes: [
         {
-          intent: 'https://ru-v2.vercel.app/scan',
+          intent: 'https://quick-review.vercel.app/scan',
           intentType: 'DYNAMIC_REDIRECT',
           dynamicRedirectType: 'SCAN_ID_IN_QUERY_STRING_PARAMETER',
         },
