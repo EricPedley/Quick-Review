@@ -25,7 +25,9 @@
       }
     }
     $session.isAuthenticated = true
-    $session.user = await client.getUser()
+    const user = await client.getUser()
+    $session.user = user
+    document.cookie = `user=${JSON.stringify(user)}`
     loading = false
   })
 </script>

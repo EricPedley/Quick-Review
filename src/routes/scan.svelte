@@ -1,8 +1,6 @@
 <script lang='ts' context='module'>
     export async function load({url, fetch, session}) {
         const scanId = url.searchParams.get('scanId')
-        // console.log(document.cookie)
-        // console.log(user)
         const {scan, user} = await fetch(`/api/scan?scanId=${scanId}`).then(r=>r.json())
         const assetId = scan.asset.assetId
         const userId = user.email?.slice?.(0,user.email.indexOf('@'))
