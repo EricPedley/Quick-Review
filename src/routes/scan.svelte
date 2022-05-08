@@ -20,8 +20,8 @@
                 redirect: '/login'
             }
         }
-        const reviews = scan.asset.customAttributes.reviews
-        const props = {reviews, name: scan.asset.customAttributes.name, description: scan.asset.description}
+        const reviews = scan.asset.customAttributes?.reviews
+        const props = {reviews, name: scan.asset.customAttributes?.name, description: scan.asset.description}
         return {
             props: {
                 ...props,

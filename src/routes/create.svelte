@@ -1,7 +1,7 @@
 <script lang="ts" context="module">
   export async function load({ url, fetch }) {
     const assetId = url.searchParams.get('id')
-    if(url.searchParams.get('review').length>0) {
+    if(url.searchParams.get('review')?.length>0) {
       const reviewObject = {
         rating: url.searchParams.get('rating'),
         review: url.searchParams.get('review')
