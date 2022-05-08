@@ -25,6 +25,8 @@ async function getAssetIDs(id) {
 
 async function get({request}) {
   console.log(request.headers.get('Cookie'))
+  console.log(cookie.parse(request.headers.get('Cookie')).user)
+  console.log(JSON.parse(cookie.parse(request.headers.get('Cookie')).user))
   const user = JSON.parse(cookie.parse(request.headers.get('Cookie')).user)
   const userId = user.email?.slice?.(0,user.email.indexOf('@')).replaceAll?.('.','dot')
   const assetIDs = await getAssetIDs(userId)
