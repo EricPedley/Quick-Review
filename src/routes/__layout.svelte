@@ -26,6 +26,9 @@
       width: 80%;
       border-radius: 20px
       margin: 2% auto
+    @media screen and (max-width: 500px)
+      border-top 3px solid black
+      border-bottom 3px solid black
   .shiftRight
     margin-left: $sidenav-width
 </style>

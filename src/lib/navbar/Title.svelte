@@ -30,5 +30,6 @@
     font-size: 2rem
 
   img
-    margin-right: 1.5rem
+    @media screen and (min-width: 500px)
+      margin-right: 1.5rem
 </style>
